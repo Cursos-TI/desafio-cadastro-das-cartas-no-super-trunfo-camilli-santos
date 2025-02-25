@@ -23,13 +23,13 @@ int main() {
     printf("Digite o código: \n"); //Ex: inicial da letra do estado: A e o número 01 (A01)
     scanf("%s", codigo1);
 
-    printf("digite o nome da cidade: \n"); //Iniciar com letra Maiúscula
+    printf("Digite o nome da cidade: \n"); //Iniciar com letra Maiúscula
     scanf("%s", cidade1);
 
     printf("Digite a populção: \n"); //Número inteiro
     scanf("%d", &populacao1);
 
-    printf("Digite a Quantidade de pontos turísticos: \n"); //Número inteiro
+    printf("Digite a quantidade de pontos turísticos: \n"); //Número inteiro
     scanf("%d", &pontost1);
 
     printf("Digite o tamanho da área em km²: \n"); //Número decimal em km²
@@ -47,13 +47,13 @@ int main() {
     printf("Digite o código: \n"); //Ex: inicial da letra do estado: A e o número 01 (A01)
     scanf("%s", codigo2);
 
-    printf("digite o nome da cidade: \n"); //Iniciar com letra Maiúscula
+    printf("Digite o nome da cidade: \n"); //Iniciar com letra Maiúscula
     scanf("%s", cidade2);
 
     printf("Digite a populção: \n"); //Número inteiro
     scanf("%d", &populacao2);
 
-    printf("Digite a Quantidade de pontos turísticos: \n"); //Número inteiro
+    printf("Digite a quantidade de pontos turísticos: \n"); //Número inteiro
     scanf("%d", &pontost2);
 
     printf("Digite o tamanho da área em km²: \n"); //Número decimal em km²
