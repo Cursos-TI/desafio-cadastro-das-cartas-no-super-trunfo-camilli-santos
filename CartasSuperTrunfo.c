@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-int main() {
-
-//declarando variáveis
+int main(){
 
     //variáveis carta 1
     char    estado1;
@@ -11,6 +9,8 @@ int main() {
     float   area1, pib1;
     float   densidade1;
     float   pibpercapita1;
+    float   superpoder1;
+    char    resultado1 [30];
 
     //variáveis carta 2
     char    estado2;
@@ -19,10 +19,12 @@ int main() {
     float   area2, pib2;
     float   densidade2;
     float   pibpercapita2;
+    float   superpoder2;
+    char    resultado2 [30];
 
 
-//Registrando carta 1
-    printf  ("Resgistre sua primeira carta \n");
+    //registro carta 1
+    printf  ("\nResgistre sua primeira carta\n");
 
     printf  ("Digite a letra do Estado: \n"); //ex.: A
     scanf   (" %c", &estado1);
@@ -47,10 +49,13 @@ int main() {
 
     densidade1 = populacao1 / area1;
 
-    pibpercapita1 = pib1 / populacao1;  
+    pibpercapita1 = pib1 / populacao1;
 
-//Registrando carta 2
-    printf  ("Registre sua segunda carta \n");
+    superpoder1 = populacao1 + area1 + pib1 + pontosturisticos1 + pibpercapita1 + (area1 / populacao1);
+
+
+    //registro carta 2
+    printf  ("\nRegistre sua segunda carta\n");
 
     printf  ("Digite a letra do Estado: \n"); //ex.: A
     scanf   (" %c", &estado2);
@@ -77,10 +82,10 @@ int main() {
 
     pibpercapita2 = pib2 / populacao2;
 
+    superpoder2 = populacao2 + area2 + pib2 + pontosturisticos2 + pibpercapita2 + (area2 / populacao2);
 
-//Saída de dados Carta 1
-
-    printf  ("***CARTA 1*** \n");
+    //Carta 1
+    printf  ("\n***CARTA 1***\n");
     printf  ("Estado: %c \n", estado1);
     printf  ("Código: %s \n", codigo1);
     printf  ("Nome da Cidade: %s \n", cidade1);
@@ -90,10 +95,10 @@ int main() {
     printf  ("PIB: %.2f bilhões de reais \n", pib1);
     printf  ("Densidade populacional: %.2f hab/km² \n", densidade1);
     printf  ("PIB per Capita: %.2f reais \n", pibpercapita1);
+    printf  ("Super Poder: %f \n", superpoder1);
 
-//Saída de dados Carta 2
-
-    printf  ("***CARTA 2*** \n");
+    //Carta 2
+    printf  ("\n***CARTA 2***\n");
     printf  ("Estado: %c \n", estado2);
     printf  ("Código: %s \n", codigo2);
     printf  ("Nome da Cidade: %s \n", cidade2);
@@ -103,5 +108,18 @@ int main() {
     printf  ("PIB: %.2f bilhões de reais \n", pib2);
     printf  ("Densidade populacional: %.2f hab/km² \n", densidade2);
     printf  ("PIB per Capita: %.2f reais \n", pibpercapita2);
+    printf  ("Super Poder: %f \n", superpoder2);
+    
+    //Comparação valores entre cartas
 
+    printf  ("\n***COMPARAÇÃO DE CARTAS***\n");
+    printf  (" 1 = carta 1 ganhou ; 0 = carta 2 ganhou\n");
+    printf  ("População: %d \n", populacao1 > populacao2);
+    printf  ("Área: %d \n", area1 > area2);
+    printf  ("PIB: %d \n", pib1 > pib2);
+    printf  ("Pontos Turísticos: %d \n", pontosturisticos1 > pontosturisticos2);
+    printf  ("Densidade Populacional: %d \n", densidade1 < densidade2);
+    printf  ("PIB per Capita: %d \n", pibpercapita1 > pibpercapita2);
+    printf  ("Super Poder: %d \n", superpoder1 > superpoder2);
+    
 }
