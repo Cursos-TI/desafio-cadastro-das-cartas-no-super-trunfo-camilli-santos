@@ -113,13 +113,14 @@ int main(){
     //Comparação valores entre cartas
 
     printf  ("\n***COMPARAÇÃO DE CARTAS***\n");
-    printf  (" 1 = carta 1 ganhou ; 0 = carta 2 ganhou\n");
-    printf  ("População: %d \n", populacao1 > populacao2);
-    printf  ("Área: %d \n", area1 > area2);
-    printf  ("PIB: %d \n", pib1 > pib2);
-    printf  ("Pontos Turísticos: %d \n", pontosturisticos1 > pontosturisticos2);
-    printf  ("Densidade Populacional: %d \n", densidade1 < densidade2);
-    printf  ("PIB per Capita: %d \n", pibpercapita1 > pibpercapita2);
-    printf  ("Super Poder: %d \n", superpoder1 > superpoder2);
+    printf  ("Comparação de cartas (Atributo: População):\n");
+    if(populacao1 > populacao2){
+        printf  ("Carta 1 venceu!");
+    }
+    else{
+        printf  ("Carta 2 venceu!");
+    }
+
+return 0;
     
 }
